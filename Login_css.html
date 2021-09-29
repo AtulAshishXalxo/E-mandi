@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login_Page</title>
+    <style>
+        body
+        {
+            margin:0;
+            padding:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image:url("unsplash1.jpg");
+            height: 125vh;
+            background-size:cover;
+            background-position: center;
+            position: relative;
+        }     
+        .signup-box
+        {
+            width: 280px;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .signup-box h1
+        { 
+            float: left;
+            font-size: 40px;
+            border-bottom:6px solid #4caf50; 
+            margin-bottom: 30px;      
+            padding:13px 0;
+        }
+        .textbox
+        {
+            width: 100%;
+            overflow: hidden;
+            font-size: 20px;
+            padding: 8px 0;
+            margin:8px 0;
+            border-bottom: 1px solid #4caf50;
+        }
+        .textbox input
+        {
+            border: none;
+            outline: none;
+            background: none;
+            color:black;
+            font-size: 18px;
+            width: 80%;
+            float: left;
+            margin: 0 10px;
+        }
+        .btn1
+        {
+            background:none;
+            color:black;
+            width:100px;
+            border: 2px solid #95a5a6;
+            font-size:18px;
+            border-radius: 4px;
+            transition:.6s;
+            overflow: hidden;
+        }
+        .btn1:focus
+        {
+            outline:none;
+        }
+        .btn1:before
+        {
+            content:'';
+            display:block;
+            position:absolute;
+            background:rgba(255,255,255,.5);
+            width:60px;
+            height:100%;
+            left:0;
+            top:0;
+            opacity: .5;
+            filter:blur(30px);
+            transform: translateX(-130px) skewX(-15deg);
+        }
+        .btn1:after
+        {
+            content:'';
+            display: block;
+            position:absolute;
+            background:rgba(255,255,255,.2);
+            width:30px;
+            height:100%;
+            left:30px;
+            top:0;
+            opacity:0.5;
+            filter:blur(30px);
+            transform: translate(-100px) scaleX(-15deg);
+        }
+        .btn1:hover
+        {
+            background: #34495e;
+            cursor:pointer;
+            opacity:0.5;
+        }
+        .btn1:hover:before
+        {
+            transform:translateX(300px) skewX(-15deg);
+            opacity:0.5;
+            transition: .5s;
+        }
+        .btn1:hover:after
+        {
+            transform:translateX(300px) skewX(-15deg);
+            opacity:0.8;
+            transition: .7s;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="signup-box" action="index.html" method="post">
+    <h1>Login</h1>
+    <div class="textbox">
+        <input type="text" name="userid" placeholder="User ID">
+    </div>
+    <div class="textbox">  
+        <input type="password" name="pass" placeholder="Password">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+        <input class="btn1" type="submit" name="" value="Sign in">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;<input class="btn1"type="submit" name="" value="Cancle">
+        
+    <div class="nav-area">
+        <a href="#">Forgot password</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Signup-css.html">Sign_Up</a>
+    </div>
+</div>
+
+</body>
+</html>
